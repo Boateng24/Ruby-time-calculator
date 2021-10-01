@@ -1,0 +1,19 @@
+$ git merge edits
+Auto-merging examples.md
+CONFLICT (content): Merge conflict in examples.md
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ gitadd README.md
+bash: gitadd: command not found
+$ git add README.md
+$ git add examples.md
+$ git commit -m "resolve merge conflict"
+[master 13ad451] resolve merge conflict
+$ git branch
+  edits
+* master
+$ git branch -D edits
+Deleted branch edits (was 0dc9f6a).
+$ git branch
+* master
